@@ -33,7 +33,7 @@ def clean_dataframe_with_linebreaks(input_path, output_path):
     # Save the cleaned DataFrame to a new CSV file
     df.to_csv(output_path, index=False, encoding='utf-8')
 
-def label_entities_conll_with_linebreaks(df, message_col='Message', output_file='labeled_data.conll'):
+def label_entities_conll_with_linebreaks(df, message_col='Message', output_file='../data/labeled_data.conll'):
     """
     Labels entities (Product, Price, and Location) in the dataset's messages column using the CoNLL format.
     Preserves line breaks and handles product labeling on the first line.
