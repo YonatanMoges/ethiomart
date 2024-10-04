@@ -111,3 +111,27 @@ def label_entities_conll_with_linebreaks(df, message_col='Message', output_file=
                     file.write("\n")  # Write a newline to separate lines
             file.write("\n")  # Separate messages
 
+
+
+# Function to read a CoNLL formatted dataset into a pandas DataFrame
+def load_conll_dataset(filepath):
+    sentences = []
+    labels = []
+    sentence = []
+    label = []
+    
+    with open(filepath, 'r', encoding='utf-8') as file:
+        for line in file:
+            if line.strip() == "":  # Empty lines separate sentences
+                sentences.append(sentence)
+                labels.append(label)
+                sentence = []
+                label = []
+            else:
+                token, tag = line.strip().split()  # assuming space-separated values
+                sentence.append(token)
+                label.append(tag)
+
+    # Convert sentences and labels into a DataFrame
+    df = pd.DataFrame({"tokens": sentences, "labels": labels})
+    return df
