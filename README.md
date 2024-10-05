@@ -17,8 +17,8 @@ This repository contains the code and resources for fine-tuning a Named Entity R
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/ethio-mart-ner.git
-cd ethio-mart-ner
+git clone https://github.com/YonatanMoges/ethiomart.git
+cd ethiomart
 ```
 
 ### 2. Install dependencies
