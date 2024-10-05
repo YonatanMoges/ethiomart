@@ -5,14 +5,13 @@ This repository contains the code and resources for fine-tuning a Named Entity R
 
 ## Directory Structure
 ├── notebooks/ # Contains Jupyter notebooks for demo and model training │   
-    ├── preprocessing.ipynb # Demo of preprocessing.py functionality │   
-    └── fine_tuning.ipynb # Fine-tuning of the NER model on Google Colab   
-├── scripts/ # Python scripts for scraping and preprocessing │   
-    ├── scraping.py # Script for scraping data from Telegram channels │   
-    └── preprocessing.py # Script for preprocessing and combining datasets   
+├── scripts/ # Python scripts for preprocessing │  
+       
+├── scraping.py # Script for scraping data from Telegram channels │    
 ├── requirements.txt # List of required Python packages   
 ├── README.md # Project documentation   
 └── .gitignore # Files to ignore in the Git repo
+
 
 ## Setup Instructions
 
