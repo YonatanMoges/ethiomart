@@ -4,14 +4,14 @@
 This repository contains the code and resources for fine-tuning a Named Entity Recognition (NER) model to extract key entities like products, prices, and locations from Amharic Telegram messages. The project involves data preprocessing, model training, and evaluation, with the fine-tuning process conducted using Google Colab.
 
 ## Directory Structure
-├── notebooks/ # Contains Jupyter notebooks for demo and model training │ 
-    ├── preprocessing.ipynb # Demo of preprocessing.py functionality │ 
-    └── fine_tuning.ipynb # Fine-tuning of the NER model on Google Colab 
-├── scripts/ # Python scripts for scraping and preprocessing │ 
-    ├── scraping.py # Script for scraping data from Telegram channels │ 
-    └── preprocessing.py # Script for preprocessing and combining datasets 
-├── requirements.txt # List of required Python packages 
-├── README.md # Project documentation 
+├── notebooks/ # Contains Jupyter notebooks for demo and model training │   
+    ├── preprocessing.ipynb # Demo of preprocessing.py functionality │   
+    └── fine_tuning.ipynb # Fine-tuning of the NER model on Google Colab   
+├── scripts/ # Python scripts for scraping and preprocessing │   
+    ├── scraping.py # Script for scraping data from Telegram channels │   
+    └── preprocessing.py # Script for preprocessing and combining datasets   
+├── requirements.txt # List of required Python packages   
+├── README.md # Project documentation   
 └── .gitignore # Files to ignore in the Git repo
 
 ## Setup Instructions
@@ -25,8 +25,9 @@ cd ethio-mart-ner
 ### 2. Install dependencies
 Ensure that you have Python 3.7 or higher installed. Install the required packages by running:
 
-bash
+```bash
 pip install -r requirements.txt
+```
 
 ### 3. Directory Details
 notebooks/: This directory contains Jupyter notebooks demonstrating preprocessing and the fine-tuning process.
@@ -44,12 +45,6 @@ requirements.txt: A list of all the Python libraries and versions used in the pr
 ### 4. Running the Project
 To run the project, you can follow these steps:
 
-Preprocessing: Run the preprocessing.py script either directly or through the demo notebook preprocessing.ipynb.
-
-Example command to run preprocessing.py:
-
-bash
-python scripts/preprocessing.py
 Fine-Tuning: Open and run fine_tuning.ipynb on Google Colab. Make sure to switch to a GPU runtime before running the notebook to speed up the fine-tuning process.
 
 Model Training and Evaluation: In fine_tuning.ipynb, the model is fine-tuned on the preprocessed dataset, and evaluation metrics such as precision, recall, and F1-score are calculated for each entity type (Product, Price, Location).
